@@ -1,0 +1,95 @@
+body {
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+header {
+    background-image: url('bckgp.jpg');
+    background-size: cover;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+nav {
+    background-color: #f0ede4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #957f63;
+}
+
+section {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+section#about,
+section#contact {
+    background-color: white; 
+}
+
+section#about {
+    display: flex;
+    align-items: center;
+}
+
+section#about p {
+    flex: 1;
+    margin-right: 50px;
+}
+
+section#about img {
+    width: 300px;
+    border-radius: 60px;
+}
+
+section#location {
+    background-color: white;
+}
+
+section#contact {
+    height: 400px; 
+}
+
+.phone-number {
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+#email {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#map {
+    height: 400px; 
+}
+
+gmp-map {
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(0.25turn, #e3d5ca, #d5bdaf);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychoterapia - Marta Galkowska</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="config.js"></script>
+    <!-- <script>
+        const googleMapsApiKey = config.googleMapsApiKey;
+    </script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=googleMapsApiKey&callback=initMap&libraries=maps,marker&v=beta"></script> -->
+    <script src="app.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=
+    AIzaSyD1YujONADM2Gch5IbcPg0tYsMTDPBzSRY
+    &callback=console.debug&libraries=maps,marker&v=beta"></script>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://maps.googleapis.com; style-src 'self'"> -->
+</head>
+<body>
+
+<header>
+    <h6 class="lead">Gabinet Psychoterapii - Marta Gałkowska</h6>
+</header>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Marta Gałkowska</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">O Mnie</a></li>
+                <li class="nav-item"><a class="nav-link" href="#location">Lokalizacja gabinetu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-4">
+<section id="about" class="d-flex align-items-center">
+    <div class="flex-grow-1 mt-3 mb-3">
+        <h2 class="mb-3">O mnie</h2>
+        <div class="w-80">
+        <p>
+            Jestem psychologiem i psychoterapeutą w trakcie 4-letniego całościowego szkolenia w Krakowskiej Szkole Psychoterapii Psychoanalitycznej afiliowanej przez Polskie Towarzystwo Psychoterapii Psychoanalitycznej, członkiem nadzwyczajnym Polskiego Towarzystwa Psychoterapii Psychoanalitycznej. Pracuję zgodnie ze standardami etycznymi tego towarzystwa. Swoją pracę poddaję regularnej superwizji.
+        </p>
+        <p>
+            Doświadczenie w pracy z pacjentami zdobywałam m.in. na Oddziale Leczenia Zaburzeń Osobowości i Nerwic w Szpitalu Klinicznym im. dr. Józefa Babińskiego, Oddziale Klinicznym Klinik Psychiatrii Dorosłych, Dzieci i Młodzieży CM UJ – w Oddziale Dziennym Leczenia Nerwic i Zaburzeń Behawioralnych oraz w Oddziale Dziennym Leczenia Psychoz a także w Krakowskim Ośrodku Terapii KOT w Krakowie.
+        </p>
+        <p>
+            Pracuję w nurcie psychoterapii psychoanalitycznej, której głównym założeniem jest fakt posiadania nieświadomego życia psychicznego. To w nieświadomości właśnie zapisane są różne ludzkie nierozwiązane konflikty, uczucia i myśli, o których nie chcemy wiedzieć, nasze wyobrażenia i wspomnienia. To nieświadomość kryje uczucia, konflikty, wspomnienia, fantazje, które kształtują wzajemne relacje.
+        </p>
+        <p>
+            Niezwykle ważne jest dla mnie zrozumienie co leży u podstaw zachowania ludzi, jak na funkcjonowanie psychiki wpływają wczesnodziecięce doświadczenia oraz wzajemne relacje. Do terapeutycznej pracy z drugim człowiekiem podchodzę w dużą pokorą, dlatego poza przygotowaniem teoretycznym uczestniczę w seminariach oraz konferencjach aby pogłębić swoją wiedzę i rozumienie relacji terapeutycznej.
+        </p>
+    </div>
+    </div>
+    <img class="col-6 justify-content-end px-3" src="mg.jpg" alt="Small Picture">
+</section>
+
+
+<section class="mt-3 mb-3" id="location">
+    <h2>Lokalizacja gabinetu</h2>
+    <div id="map" class="mt-3 mb-3">
+        <gmp-map center="50.03945541381836,19.94116973876953" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="50.03945541381836,19.94116973876953" title="My location"></gmp-advanced-marker>
+          </gmp-map>
+    </div>
+    <p class="lead mt-3">Ul. Śliska 16/2, Kraków</p>
+    </p>
+</section>
+
+<section id="contact">
+    <h2 class="mb-3">Kontakt</h2>
+    <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+        <p class="lead mb-3 mt-3 text-center">Zapraszam do kontaktu pod numerem telefonu:</p>
+        <p class="display-5 phone-number">+48 732 55 70 44</p>
+        <p class="lead">lub pod adresem email:</p>
+        <p class="lead" id="email">marta1galkowska@gmail.com</p>
+    </div>
+</section>
+
+
+
+<footer>
+    <small>&copy; 2024 Gabinet Psychoterapii - Marta Gałkowska. Wszelkie prawa zastrzeżone.</small>
+</footer>
+
+<script>
+    function initMap() {
+        const mapCenter = { lat: 50.03945541381836, lng: 19.94116973876953 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: mapCenter,
+        });
+
+        const marker = new google.maps.Marker({
+            position: mapCenter,
+            map: map,
+            title: "Gabinet Psychoterapii",
+        });
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+</body>
+</html>
