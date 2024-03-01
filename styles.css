@@ -14,6 +14,11 @@ header {
     justify-content: center;
 }
 
+#title {
+    font-size: 1.4rem;
+    padding: 30px;
+}
+
 nav {
     background-color: #f0ede4;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
