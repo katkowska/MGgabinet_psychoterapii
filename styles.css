@@ -12,7 +12,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+}
+
+#title {
+    font-size: 1.4rem;
+    padding: 30px;
 }
 
 nav {
@@ -103,6 +107,7 @@ footer {
     .phone-number {
         font-size: 1rem; 
         font-weight: bold;
+        color: rgba(0.1);
     }
     
     #email {
@@ -121,5 +126,6 @@ footer {
         align-items: center;
         justify-content: center;
         padding-left: 30px;
+        padding-right: 30px;
     }
 }
