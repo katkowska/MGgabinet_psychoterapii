@@ -6,13 +6,12 @@ body {
 }
 
 header {
-    background-image: url('bckgp2.jpg');
+    background-image: url('bckgp.jpg');
     background-size: cover;
     height: 570px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
 }
 
 nav {
@@ -24,8 +23,8 @@ nav {
 nav a {
     text-decoration: none;
     color: #333;
-    padding: 10px 20px;
-    margin: 0 10px;
+    /* padding: 10px 20px;
+    margin: 0 10px; */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -41,6 +40,7 @@ section {
 }
 
 section#about,
+section#location,
 section#contact {
     background-color: white; 
 }
@@ -60,12 +60,8 @@ section#about img {
     border-radius: 60px;
 }
 
-section#location {
-    background-color: white;
-}
-
 section#contact {
-    height: 400px; 
+    height: 350px; 
 }
 
 .phone-number {
@@ -89,7 +85,42 @@ gmp-map {
 footer {
     text-align: center;
     padding: 10px;
-    background: linear-gradient(0.25turn, #738257, #9CA974);
+    background: linear-gradient(#97A974, #9CA974);
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     color: whitesmoke;
+}
+
+@media only screen and (max-width: 629px) {
+    img {
+        display: none;
+    }
+
+    section#about img {
+        font-size: 1rem;
+    }
+    
+    .phone-number {
+        font-size: 1rem; 
+        font-weight: bold;
+        color: rgba(0.1);
+    }
+    
+    #email {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    section#contact {
+        font-size: 1rem;
+    }
+    
+    header {
+        height: 200px;
+        display: flex;
+        font-size: 0.2rem;
+        align-items: center;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
