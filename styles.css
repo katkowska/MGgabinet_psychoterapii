@@ -86,7 +86,7 @@ section#contact {
 }
 
 #map1 iframe {
-    width: 1050px; 
+    width: 100%; 
     height: 450px; 
     border: 0; 
 }
