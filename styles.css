@@ -79,13 +79,18 @@ section#contact {
     font-weight: bold;
 }
 
-#map {
-    height: 400px; 
+#map1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
-gmp-map {
-    height: 100%;
+#map1 iframe {
+    width: 1050px; 
+    height: 450px; 
+    border: 0; 
 }
+
 
 footer {
     text-align: center;
