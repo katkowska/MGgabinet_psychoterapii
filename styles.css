@@ -100,7 +100,7 @@ footer {
         display: none;
     }
 
-    #map1 {
+    #map1 iframe {
         width: 100%;
         height: 200px; 
     }
