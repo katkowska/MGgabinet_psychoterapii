@@ -90,7 +90,7 @@ gmp-map {
 footer {
     text-align: center;
     padding: 10px;
-    background: linear-gradient(#97A974, #9CA974);
+    background: linear-gradient(#97A974, #97A974);
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     color: whitesmoke;
 }
