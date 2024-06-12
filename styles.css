@@ -100,6 +100,10 @@ footer {
         display: none;
     }
 
+    #map1 {
+        display: none;
+    }
+
     section#about img {
         font-size: 1rem;
     }
